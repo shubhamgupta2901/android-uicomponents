@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="quesscorp.com.uicomponents">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".samples.HomeActivity"/>
+
+        <activity-alias android:name=".Launcher"
+            android:targetActivity=".samples.HomeActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <activity
+            android:name=".samples.waitingdotsSample.WaitingDotsSampleActivity"
+            android:label="Waiting Dots" />
+        <activity
+            android:name=".samples.textdrawableSample.TextDrawableSampleActivity"
+            android:label="Text Drawable"></activity>
+        <activity
+            android:name=".samples.textdrawableSample.ListActivity"
+            android:label="List"></activity>
+
+        <activity
+            android:name=".samples.progresswheelSample.ProgressWheelSampleActivity"
+            android:label="Progress Wheel"></activity>
+
+
+        <activity
+            android:name=".samples.photoviewSample.PhotoViewSampleActivity"
+            android:label="PhotoView Samples"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".samples.photoviewSample.SimpleSampleActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+
+        <activity
+            android:name=".samples.photoviewSample.ViewPagerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.photoviewSample.RotationSampleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.photoviewSample.PicassoSampleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.photoviewSample.ActivityTransitionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.photoviewSample.ActivityTransitionToActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.photoviewSample.ImmersiveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".samples.cropimage.CropImageSampleActivity"
+            android:theme="@style/CropImageDemoCustomTheme"
+            >
+        </activity>
+
+        <!--Note: Always add this activity when using crop image component-->
+        <activity android:name=".components.cropimage.CropImageActivity"
+            android:theme="@style/CropImageDemoCustomTheme"/>
+
+        <activity
+            android:name=".samples.materialdialogs.MaterialDialogSampleActivity"
+            android:label="Material Dialog Samples"
+            ></activity>
+
+        <activity
+            android:name=".samples.materialdialogs.PreferenceActivity"
+            android:label="Material Dialog Samples"
+            ></activity>
+
+    </application>
+
+
+</manifest>
