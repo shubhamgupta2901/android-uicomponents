@@ -20,7 +20,6 @@ import quesscorp.com.uicomponents.samples.waitingdotsSample.WaitingDotsSampleAct
  * Created by Shubham
  * Used to index all the samples
  */
-
 public class HomeActivity extends AppCompatActivity {
 
     Button mButtonWaitingDots, mButtonTextDrawable, mButtonProgressWheel, mButtonPhotoView, mButtonCropImage;
