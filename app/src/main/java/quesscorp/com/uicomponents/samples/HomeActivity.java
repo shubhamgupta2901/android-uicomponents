@@ -16,6 +16,10 @@ import quesscorp.com.uicomponents.samples.progresswheelSample.ProgressWheelSampl
 import quesscorp.com.uicomponents.samples.textdrawableSample.TextDrawableSampleActivity;
 import quesscorp.com.uicomponents.samples.waitingdotsSample.WaitingDotsSampleActivity;
 
+/**
+ * Created by Shubham
+ * Used to index all the samples
+ */
 
 public class HomeActivity extends AppCompatActivity {
 
