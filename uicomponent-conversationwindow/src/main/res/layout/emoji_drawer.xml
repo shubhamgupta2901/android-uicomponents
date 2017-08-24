@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:background="@color/gray12"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp">
+
+        <com.astuetz.PagerSlidingTabStrip android:id="@+id/tabs"
+                                          android:layout_weight="1"
+                                          android:layout_width="0dp"
+                                          android:layout_height="match_parent"
+                                          android:background="@color/gray12"
+                                          app:pstsShouldExpand="true"
+                                          app:pstsTabPaddingLeftRight="@dimen/emoji_drawer_left_right_padding"
+                                          app:pstsUnderlineColor="#44555555"
+                                          app:pstsIndicatorColor="#66555555"
+                                          app:pstsIndicatorHeight="@dimen/emoji_drawer_indicator_height" />
+
+        <View android:layout_width="1px"
+              android:layout_height="match_parent"
+              android:background="@color/gray20"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp" />
+
+        <sg.com.uicomponent_conversationwindow.uicomponents.RepeatableImageKey
+                android:id="@+id/backspace"
+                android:background="@color/gray12"
+                android:src="@drawable/ic_backspace_grey_600_24dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/emoji_pager"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</merge>

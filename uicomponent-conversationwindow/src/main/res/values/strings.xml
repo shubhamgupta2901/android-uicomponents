@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">uicomponent-conversationwindow</string>
+
+    <!-- InputPanel -->
+    <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Tap and hold to record a voice message, release to send</string>
+
+    <!-- conversation_activity -->
+    <string name="ConversationActivity_reset_secure_session_question">Reset secure session?</string>
+    <string name="ConversationActivity_this_may_help_if_youre_having_encryption_problems">This may help if you\'re having encryption problems in this conversation. Your messages will be kept.</string>
+    <string name="ConversationActivity_reset">Reset</string>
+    <string name="ConversationActivity_delete_thread_question">Delete conversation?</string>
+    <string name="ConversationActivity_this_will_permanently_delete_all_messages_in_this_conversation">This will permanently delete all messages in this conversation.</string>
+    <string name="ConversationActivity_add_attachment">Add attachment</string>
+    <string name="ConversationActivity_select_contact_info">Select contact info</string>
+    <string name="ConversationActivity_compose_message">Compose message</string>
+    <string name="ConversationActivity_sorry_there_was_an_error_setting_your_attachment">Sorry, there was an error setting your attachment.</string>
+    <string name="ConversationActivity_the_gif_you_selected_was_too_big">The gif you selected was too big!</string>
+    <string name="ConversationActivity_sorry_the_selected_video_exceeds_message_size_restrictions">Sorry, the selected video exceeds message size restrictions (%1$skB).</string>
+    <string name="ConversationActivity_sorry_the_selected_audio_exceeds_message_size_restrictions">Sorry, the selected audio exceeds message size restrictions (%1$skB).</string>
+    <string name="ConversationActivity_recipient_is_not_a_valid_sms_or_email_address_exclamation">Recipient is not a valid SMS or email address!</string>
+    <string name="ConversationActivity_message_is_empty_exclamation">Message is empty!</string>
+    <string name="ConversationActivity_group_members">Group members</string>
+    <string name="ConversationActivity_group_conversation">Group conversation</string>
+
+    <!-- conversation_activity -->
+    <string name="conversation_activity__type_message_push">Signal message</string>
+    <string name="conversation_activity__type_message_sms_insecure">Unsecured SMS</string>
+    <string name="conversation_activity__type_message_mms_insecure">Unsecured MMS</string>
+    <string name="conversation_activity__from_sim_name">From %1$s</string>
+    <string name="conversation_activity__send">Send</string>
+    <string name="conversation_activity__remove">Remove</string>
+    <string name="conversation_activity__window_description">Conversation with %1$s</string>
+    <string name="conversation_activity__compose_description">Message composition</string>
+    <string name="conversation_activity__emoji_toggle_description">Toggle emoji keyboard</string>
+    <string name="conversation_activity__attachment_thumbnail">Attachment Thumbnail</string>
+    <string name="conversation_activity__quick_attachment_drawer_toggle_camera_description">Toggle quick camera attachment drawer</string>
+    <string name="conversation_activity__quick_attachment_drawer_record_and_send_audio_description">Record and send audio attachment</string>
+    <string name="conversation_activity__enable_signal_for_sms">Enable Signal for SMS</string>
+
+    <!-- conversation_input_panel -->
+    <string name="conversation_input_panel__slide_to_cancel">SLIDE TO CANCEL</string>
+
+    <string name="transport_selection_list_item__transport_icon">Transport icon</string>
+    <string name="UntrustedSendDialog_send_message">Send message?</string>
+    <string name="UntrustedSendDialog_send">Send</string>
+    <string name="UnverifiedSendDialog_send_message">Send message?</string>
+    <string name="UnverifiedSendDialog_send">Send</string>
+    <string name="ConversationActivity_transport_signal">Signal</string>
+    <string name="ConversationActivity_transport_insecure_sms">Insecure SMS</string>
+    <string name="ConversationActivity_transport_insecure_mms">Insecure MMS</string>
+
+</resources>

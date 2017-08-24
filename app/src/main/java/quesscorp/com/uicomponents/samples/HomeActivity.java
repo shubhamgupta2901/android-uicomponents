@@ -1,11 +1,11 @@
 package quesscorp.com.uicomponents.samples;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import quesscorp.com.uicomponents.R;
@@ -22,20 +22,6 @@ import quesscorp.com.uicomponents.samples.waitingdotsSample.WaitingDotsSampleAct
  */
 public class HomeActivity extends AppCompatActivity {
 
-    Button mButtonWaitingDots, mButtonTextDrawable, mButtonProgressWheel, mButtonPhotoView, mButtonCropImage;
-    @BindView(R.id.btn_waiting_dots)
-    Button btnWaitingDots;
-    @BindView(R.id.btn_text_drawable)
-    Button btnTextDrawable;
-    @BindView(R.id.btn_progress_wheel)
-    Button btnProgressWheel;
-    @BindView(R.id.btn_photo_view)
-    Button btnPhotoView;
-    @BindView(R.id.btn_crop_image)
-    Button btnCropImage;
-    @BindView(R.id.btn_material_dialog)
-    Button btnMaterialDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +29,8 @@ public class HomeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_waiting_dots, R.id.btn_text_drawable, R.id.btn_progress_wheel, R.id.btn_photo_view, R.id.btn_crop_image, R.id.btn_material_dialog})
-    public void onViewClicked(View view) {
+    @OnClick({R.id.btn_waiting_dots, R.id.btn_text_drawable, R.id.btn_progress_wheel, R.id.btn_photo_view, R.id.btn_crop_image, R.id.btn_material_dialog,R.id.btn_conversation_window})
+    public void onViewClicked(View view)  {
         switch (view.getId()) {
             case R.id.btn_waiting_dots:
                 startActivity(WaitingDotsSampleActivity.newIntent(this));
@@ -63,6 +49,17 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case R.id.btn_material_dialog:
                 startActivity(MaterialDialogSampleActivity.newIntent(this));
+                break;
+            case R.id.btn_conversation_window:
+                Intent intent = null;
+                try {
+                    intent = new Intent(this,Class.forName("sg.com.uicomponent_conversationwindow.ConversationActivity"));
+                    startActivity(intent);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                    Snackbar.make(findViewById(R.id.ll_root),"Activity Not Found",Snackbar.LENGTH_SHORT).show();
+                }
+
                 break;
         }
     }
