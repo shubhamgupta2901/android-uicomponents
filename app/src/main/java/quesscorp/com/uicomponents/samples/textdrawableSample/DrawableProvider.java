@@ -10,8 +10,9 @@ import android.graphics.drawable.InsetDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.util.TypedValue;
 
-import quesscorp.com.uicomponents.components.textdrawable.ColorGenerator;
-import quesscorp.com.uicomponents.components.textdrawable.TextDrawable;
+import sg.com.uicomponent_textdrawable.ColorGenerator;
+import sg.com.uicomponent_textdrawable.TextDrawable;
+
 
 public class DrawableProvider {
 

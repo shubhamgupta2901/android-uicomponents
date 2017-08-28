@@ -1,4 +1,4 @@
-package quesscorp.com.uicomponents.components.textdrawable;
+package sg.com.uicomponent_textdrawable;
 
 import java.util.Arrays;
 import java.util.List;

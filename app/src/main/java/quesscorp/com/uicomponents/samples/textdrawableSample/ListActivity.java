@@ -15,8 +15,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import quesscorp.com.uicomponents.R;
-import quesscorp.com.uicomponents.components.textdrawable.ColorGenerator;
-import quesscorp.com.uicomponents.components.textdrawable.TextDrawable;
+import sg.com.uicomponent_textdrawable.ColorGenerator;
+import sg.com.uicomponent_textdrawable.TextDrawable;
+
 
 public class ListActivity extends ActionBarActivity {
 
