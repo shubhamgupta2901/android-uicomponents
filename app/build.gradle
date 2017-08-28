@@ -39,6 +39,7 @@ dependencies {
     })
     compile project(':uicomponent-materialdialogs')
     compile project(':uicomponent-conversationwindow')
+    compile project(':uicomponent-waitingdots')
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     compile 'com.android.support:design:26.+'

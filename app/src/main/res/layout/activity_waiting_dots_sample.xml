@@ -20,7 +20,7 @@
             android:textColor="@android:color/primary_text_light"
             android:textSize="45sp" />
 
-        <quesscorp.com.uicomponents.components.waitingdots.DotsTextView
+        <sg.com.uicomponent_waitingdots.DotsTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/dots"

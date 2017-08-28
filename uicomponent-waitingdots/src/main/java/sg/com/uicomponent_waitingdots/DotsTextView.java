@@ -1,25 +1,16 @@
-package quesscorp.com.uicomponents.components.waitingdots;
+package sg.com.uicomponent_waitingdots;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
-import android.graphics.Paint;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.SpannableString;
 import android.text.Spanned;
-import android.text.style.ReplacementSpan;
 import android.util.AttributeSet;
-import android.view.View;
-
-import java.lang.ref.WeakReference;
-
-import quesscorp.com.uicomponents.R;
 
 public class DotsTextView extends android.support.v7.widget.AppCompatTextView {
 
@@ -188,53 +179,8 @@ public class DotsTextView extends android.support.v7.widget.AppCompatTextView {
         this.period = period;
     }
 
-    public class JumpingSpan extends ReplacementSpan {
 
-        private float translationX = 0;
-        private float translationY = 0;
 
-        @Override
-        public int getSize(Paint paint, CharSequence text, int start, int end, Paint.FontMetricsInt fontMetricsInt) {
-            return (int) paint.measureText(text, start, end);
-        }
 
-        @Override
-        public void draw(Canvas canvas, CharSequence text, int start, int end, float x, int top, int y, int bottom, Paint paint) {
-            canvas.drawText(text, start, end, x + translationX, y + translationY, paint);
-        }
 
-        public void setTranslationX(float translationX) {
-            this.translationX = translationX;
-        }
-
-        public void setTranslationY(float translationY) {
-            this.translationY = translationY;
-        }
-    }
-
-    public class SinTypeEvaluator implements TypeEvaluator<Number> {
-        @Override
-        public Number evaluate(float fraction, Number from, Number to) {
-            return Math.max(0, Math.sin(fraction * Math.PI * 2)) * (to.floatValue() - from.floatValue());
-        }
-    }
-
-    public class InvalidateViewOnUpdate implements ValueAnimator.AnimatorUpdateListener {
-        private final WeakReference<View> viewRef;
-
-        public InvalidateViewOnUpdate(View view) {
-            this.viewRef = new WeakReference<>(view);
-        }
-
-        @Override
-        public void onAnimationUpdate(ValueAnimator valueAnimator) {
-            final View view = viewRef.get();
-
-            if (view == null) {
-                return;
-            }
-
-            view.invalidate();
-        }
-    }
 }

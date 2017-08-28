@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import quesscorp.com.uicomponents.R;
-import quesscorp.com.uicomponents.components.waitingdots.DotsTextView;
+import sg.com.uicomponent_waitingdots.DotsTextView;
+
 
 public class WaitingDotsSampleActivity extends AppCompatActivity {
 
