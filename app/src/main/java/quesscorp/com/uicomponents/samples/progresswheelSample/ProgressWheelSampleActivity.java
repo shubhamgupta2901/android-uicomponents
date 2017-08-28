@@ -16,7 +16,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import quesscorp.com.uicomponents.R;
-import quesscorp.com.uicomponents.components.progresswheel.ProgressWheel;
+import sg.com.uicomponent_progresswheel.ProgressCallback;
+import sg.com.uicomponent_progresswheel.ProgressWheel;
+
 
 public class ProgressWheelSampleActivity extends ActionBarActivity {
 
@@ -72,7 +74,7 @@ public class ProgressWheelSampleActivity extends ActionBarActivity {
                         progressWheelLinear.setProgress(0.0f);
                         progressWheelInterpolated.setProgress(0.0f);
 
-                        progressWheelInterpolated.setCallback(new ProgressWheel.ProgressCallback() {
+                        progressWheelInterpolated.setCallback(new ProgressCallback() {
                             @Override
                             public void onProgressUpdate(float progress) {
                                 if(progress == 0) {
@@ -85,7 +87,7 @@ public class ProgressWheelSampleActivity extends ActionBarActivity {
                             }
                         });
 
-                        progressWheelLinear.setCallback(new ProgressWheel.ProgressCallback() {
+                        progressWheelLinear.setCallback(new ProgressCallback() {
                             @Override
                             public void onProgressUpdate(float progress) {
                                 if(progress == 0) {
@@ -188,13 +190,13 @@ public class ProgressWheelSampleActivity extends ActionBarActivity {
     }
 
     private void setProgress(float progress) {
-        progressWheelLinear.setCallback(new ProgressWheel.ProgressCallback() {
+        progressWheelLinear.setCallback(new ProgressCallback() {
             @Override
             public void onProgressUpdate(float progress) {
                 linearValue.setText(String.format("%.2f", progress));
             }
         });
-        progressWheelInterpolated.setCallback(new ProgressWheel.ProgressCallback() {
+        progressWheelInterpolated.setCallback(new ProgressCallback() {
             @Override
             public void onProgressUpdate(float progress) {
                 interpolatedValue.setText(String.format("%.2f", progress));

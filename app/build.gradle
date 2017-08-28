@@ -41,6 +41,7 @@ dependencies {
     compile project(':uicomponent-conversationwindow')
     compile project(':uicomponent-waitingdots')
     compile project(':uicomponent-textdrawable')
+    compile project(':uicomponent-progresswheel')
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     compile 'com.android.support:design:26.+'

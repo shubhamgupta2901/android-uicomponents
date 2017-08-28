@@ -1,1 +1,1 @@
-include ':app', ':uicomponent-materialdialogs', ':uicomponent-conversationwindow', ':uicomponent-waitingdots', ':uicomponent-textdrawable'
+include ':app', ':uicomponent-materialdialogs', ':uicomponent-conversationwindow', ':uicomponent-waitingdots', ':uicomponent-textdrawable', ':uicomponent-progresswheel'

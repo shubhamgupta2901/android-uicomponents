@@ -1,4 +1,4 @@
-package quesscorp.com.uicomponents.components.progresswheel;
+package sg.com.uicomponent_progresswheel;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -15,8 +15,6 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
-
-import quesscorp.com.uicomponents.R;
 
 public class ProgressWheel extends View {
   private static final String TAG = ProgressWheel.class.getSimpleName();
@@ -86,7 +84,7 @@ public class ProgressWheel extends View {
   }
 
   @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1) private void setAnimationEnabled() {
-    int currentApiVersion = android.os.Build.VERSION.SDK_INT;
+    int currentApiVersion = Build.VERSION.SDK_INT;
 
     float animationValue;
     if (currentApiVersion >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
@@ -674,24 +672,10 @@ public class ProgressWheel extends View {
     }
   }
 
-  public interface ProgressCallback {
-    /**
-     * Method to call when the progress reaches a value
-     * in order to avoid float precision issues, the progress
-     * is rounded to a float with two decimals.
-     *
-     * In indeterminate mode, the callback is called each time
-     * the wheel completes an animation cycle, with, the progress value is -1.0f
-     *
-     * @param progress a double value between 0.00 and 1.00 both included
-     */
-    public void onProgressUpdate(float progress);
-  }
-
   static class WheelSavedState extends BaseSavedState {
     //required field that makes Parcelables from a Parcel
-    public static final Parcelable.Creator<WheelSavedState> CREATOR =
-        new Parcelable.Creator<WheelSavedState>() {
+    public static final Creator<WheelSavedState> CREATOR =
+        new Creator<WheelSavedState>() {
           public WheelSavedState createFromParcel(Parcel in) {
             return new WheelSavedState(in);
           }
