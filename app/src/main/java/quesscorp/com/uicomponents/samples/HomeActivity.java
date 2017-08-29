@@ -13,6 +13,7 @@ import quesscorp.com.uicomponents.samples.cropimage.CropImageSampleActivity;
 import quesscorp.com.uicomponents.samples.materialdialogs.MaterialDialogSampleActivity;
 import quesscorp.com.uicomponents.samples.photoviewSample.PhotoViewSampleActivity;
 import quesscorp.com.uicomponents.samples.progresswheelSample.ProgressWheelSampleActivity;
+import quesscorp.com.uicomponents.samples.shimmer.ShimmerDemoActivity;
 import quesscorp.com.uicomponents.samples.textdrawableSample.TextDrawableSampleActivity;
 import quesscorp.com.uicomponents.samples.waitingdotsSample.WaitingDotsSampleActivity;
 
@@ -29,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_waiting_dots, R.id.btn_text_drawable, R.id.btn_progress_wheel, R.id.btn_photo_view, R.id.btn_crop_image, R.id.btn_material_dialog,R.id.btn_conversation_window})
+    @OnClick({R.id.btn_waiting_dots, R.id.btn_text_drawable, R.id.btn_progress_wheel, R.id.btn_photo_view, R.id.btn_crop_image, R.id.btn_material_dialog,R.id.btn_conversation_window,R.id.btn_shimmer})
     public void onViewClicked(View view)  {
         switch (view.getId()) {
             case R.id.btn_waiting_dots:
@@ -60,6 +61,9 @@ public class HomeActivity extends AppCompatActivity {
                     Snackbar.make(findViewById(R.id.ll_root),"Activity Not Found",Snackbar.LENGTH_SHORT).show();
                 }
 
+                break;
+            case R.id.btn_shimmer:
+                startActivity(ShimmerDemoActivity.newIntent(this));
                 break;
         }
     }

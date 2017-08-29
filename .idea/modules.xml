@@ -3,11 +3,19 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UIComponents.iml" filepath="$PROJECT_DIR$/UIComponents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-uicomponents.iml" filepath="$PROJECT_DIR$/android-uicomponents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/uicomponent-conversationwindow/uicomponent-conversationwindow.iml" filepath="$PROJECT_DIR$/uicomponent-conversationwindow/uicomponent-conversationwindow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uicomponent-conversationwindow/uicomponent-conversationwindow.iml" filepath="$PROJECT_DIR$/uicomponent-conversationwindow/uicomponent-conversationwindow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uicomponent-materialdialogs/uicomponent-materialdialogs.iml" filepath="$PROJECT_DIR$/uicomponent-materialdialogs/uicomponent-materialdialogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/uicomponent-materialdialogs/uicomponent-materialdialogs.iml" filepath="$PROJECT_DIR$/uicomponent-materialdialogs/uicomponent-materialdialogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/uicomponent-progresswheel/uicomponent-progresswheel.iml" filepath="$PROJECT_DIR$/uicomponent-progresswheel/uicomponent-progresswheel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uicomponent-progresswheel/uicomponent-progresswheel.iml" filepath="$PROJECT_DIR$/uicomponent-progresswheel/uicomponent-progresswheel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uicomponent-shimmer/uicomponent-shimmer.iml" filepath="$PROJECT_DIR$/uicomponent-shimmer/uicomponent-shimmer.iml" />
       <module fileurl="file://$PROJECT_DIR$/uicomponent-textdrawable/uicomponent-textdrawable.iml" filepath="$PROJECT_DIR$/uicomponent-textdrawable/uicomponent-textdrawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uicomponent-textdrawable/uicomponent-textdrawable.iml" filepath="$PROJECT_DIR$/uicomponent-textdrawable/uicomponent-textdrawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uicomponent-waitingdots/uicomponent-waitingdots.iml" filepath="$PROJECT_DIR$/uicomponent-waitingdots/uicomponent-waitingdots.iml" />
       <module fileurl="file://$PROJECT_DIR$/uicomponent-waitingdots/uicomponent-waitingdots.iml" filepath="$PROJECT_DIR$/uicomponent-waitingdots/uicomponent-waitingdots.iml" />
     </modules>
   </component>

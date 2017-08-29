@@ -97,6 +97,10 @@
             android:label="Material Dialog Samples"
             ></activity>
 
+        <activity
+            android:name=".samples.shimmer.ShimmerDemoActivity"
+            android:label="Shimmer Demo" />
+
     </application>
 
 
