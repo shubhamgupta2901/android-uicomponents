@@ -37,12 +37,13 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile project(':uicomponent-materialdialogs')
-    compile project(':uicomponent-conversationwindow')
-    compile project(':uicomponent-waitingdots')
-    compile project(':uicomponent-textdrawable')
-    compile project(':uicomponent-progresswheel')
+    compile project(path: ':uicomponent-materialdialogs')
+    compile project(path: ':uicomponent-conversationwindow')
+    compile project(path: ':uicomponent-waitingdots')
+    compile project(path: ':uicomponent-textdrawable')
+    compile project(path: ':uicomponent-progresswheel')
     compile project(path: ':uicomponent-shimmer')
+    compile project(path: ':uicomponent-photoview')
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support:design:26.+'
     compile 'com.squareup.picasso:picasso:2.5.2'

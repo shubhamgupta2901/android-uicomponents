@@ -1,4 +1,4 @@
-package quesscorp.com.uicomponents.components.photoview;
+package sg.com.uicomponent_photoview;
 
 /**
  * Interface definition for a callback to be invoked when the photo is experiencing a drag event

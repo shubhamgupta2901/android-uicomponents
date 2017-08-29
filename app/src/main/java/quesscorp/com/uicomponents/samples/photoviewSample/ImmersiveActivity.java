@@ -11,8 +11,8 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 import quesscorp.com.uicomponents.R;
-import quesscorp.com.uicomponents.components.photoview.OnPhotoTapListener;
-import quesscorp.com.uicomponents.components.photoview.PhotoView;
+import sg.com.uicomponent_photoview.OnPhotoTapListener;
+import sg.com.uicomponent_photoview.PhotoView;
 
 import static android.R.attr.uiOptions;
 

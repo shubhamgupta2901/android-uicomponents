@@ -17,7 +17,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <quesscorp.com.uicomponents.components.photoview.PhotoView
+    <sg.com.uicomponent_photoview.PhotoView
         android:id="@+id/iv_photo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

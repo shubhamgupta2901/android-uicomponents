@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import quesscorp.com.uicomponents.R;
-import quesscorp.com.uicomponents.components.photoview.PhotoView;
+import sg.com.uicomponent_photoview.PhotoView;
 
 public class ViewPagerActivity extends AppCompatActivity {
 

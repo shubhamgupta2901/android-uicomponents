@@ -1,4 +1,4 @@
-package quesscorp.com.uicomponents.components.photoview;
+package sg.com.uicomponent_photoview;
 
 /**
  * Interface definition for callback to be invoked when attached ImageView scale changes

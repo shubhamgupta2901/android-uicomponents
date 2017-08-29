@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.squareup.picasso.Picasso;
 
 import quesscorp.com.uicomponents.R;
-import quesscorp.com.uicomponents.components.photoview.PhotoView;
+import sg.com.uicomponent_photoview.PhotoView;
 
 public class PicassoSampleActivity extends AppCompatActivity {
 

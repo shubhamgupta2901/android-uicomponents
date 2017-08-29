@@ -1,4 +1,4 @@
-package quesscorp.com.uicomponents.components.photoview;
+package sg.com.uicomponent_photoview;
 
 import android.view.MotionEvent;
 

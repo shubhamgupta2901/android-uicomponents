@@ -20,10 +20,11 @@ import android.widget.Toast;
 import java.util.Random;
 
 import quesscorp.com.uicomponents.R;
-import quesscorp.com.uicomponents.components.photoview.OnMatrixChangedListener;
-import quesscorp.com.uicomponents.components.photoview.OnPhotoTapListener;
-import quesscorp.com.uicomponents.components.photoview.OnSingleFlingListener;
-import quesscorp.com.uicomponents.components.photoview.PhotoView;
+import sg.com.uicomponent_photoview.OnMatrixChangedListener;
+import sg.com.uicomponent_photoview.OnPhotoTapListener;
+import sg.com.uicomponent_photoview.OnSingleFlingListener;
+import sg.com.uicomponent_photoview.PhotoView;
+
 
 public class SimpleSampleActivity extends AppCompatActivity {
 
